@@ -1,0 +1,180 @@
+//HEADER
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 5rem repeat(2, minmax(12rem, 22rem)) repeat(3, 22rem) 2rem;
+    grid:
+    'header header header'
+    'content-1 box-1 box-1'
+    'content-2 content-2 box-1';
+
+    gap: .3rem;
+    padding: 0;
+    margin: auto;
+    height: auto;
+
+}
+
+
+
+
+.heading {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    background-color: pink;
+
+    }
+    .box-1 {
+        background-image: url('../img/blueflatup.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-size: cover;
+        grid-column: 2 / span 4;
+        grid-row: 2 / 2;
+        background-color:blueviolet;
+    }
+
+.content-2 {
+    @extend %paintings;
+    background-image: url('../img/blueflat.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    grid-column: 1 / span 2;
+    grid-row: 3 / 3;
+    background-color: bisque;
+}
+
+.box-2 {
+    grid-column: 3 / span 3;
+    grid-row: 3 / 3;
+    background-color: yellow;
+
+    &--text {
+        font-size: 3.3em;
+        margin: 8px;
+        @include respond(phone) {
+            align-items: center;
+            font-size: 2.2em;
+            padding: 1%;
+            background-size: contain;
+        }
+    }
+}
+
+
+
+.box-3 {
+    grid-column: 1 / 1;
+    grid-row: 4 / 6;
+    background-color: rgb(8, 16, 88);
+ 
+
+    &--text {
+        font-size: 3.3em;
+        margin: 8px;
+        color: blanchedalmond;
+        @include respond(phone) {
+            align-items: center;
+            font-size: 2.2em;
+            padding: 1%;
+            background-size: contain;
+        }
+    }
+    
+}
+
+.article {
+    display: flex;
+    flex-flow: column;
+    border: 1px blanchedalmond;
+
+        &-caption {
+    font-size: 2em;
+    margin: 8px;
+    color: rgb(211, 203, 192);
+}
+}
+
+.empty {
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+    background-color: hsl(188, 100%, 24%);
+
+}
+
+.empty-2 {
+    grid-column: 3 / 3;
+    grid-row: 5 / 5;
+    background-color: hsl(188, 100%, 24%);
+
+    &__quotes {
+        font-family: $font-main;
+        font-size: 2rem;
+        justify-content: center;
+
+    }
+
+}
+//PAINTINGS GALLERY
+%paintings {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+//First row
+.painting-1 {
+    @extend %paintings;
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+
+
+}
+.painting-2 {
+    @extend %paintings;
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+    background-image: url('../img/blue2.jpg');
+}
+
+
+
+//Second row
+.painting-4 {
+    @extend %paintings;
+    grid-column: 2 / 2;
+    grid-row: 5 / 5;
+    background-image: url('../img/blue4.jpg');
+}
+.painting-5 {
+    @extend %paintings;
+    grid-column: 3 / 3;
+    grid-row: 5 / 5;
+
+}
+
+
+
+//Third row
+
+.painting-8 {
+    @extend %paintings;
+    grid-column: 3 / 3;
+    grid-row: 6 / 6;
+    background-image: url('../img/blue8.jpg');
+}
+
+
+.footer {
+    grid-column: 1 / span 3;
+    grid-row: 7 / 7;
+    background-color: black;
+}

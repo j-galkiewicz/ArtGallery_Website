@@ -1,0 +1,49 @@
+//CONTACT FORM
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-column: 2 / 2;
+    grid-row: 6 / 6;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    background-color: #a5a9ac;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    line-height: 1.5;
+    @include respond(phone) {
+        align-items: center;
+        font-size: 2.2em;
+        padding: 1%;
+        background-size: contain;
+    }
+
+}
+
+
+#first-name,
+#last-name,
+#email {
+    border: none;
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    align-content: center;
+    margin: 0 auto;
+    position: relative; 
+    font-size: 1.1em;
+}
+
+#message {
+    font-size: 1.1em;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+

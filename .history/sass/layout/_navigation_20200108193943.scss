@@ -1,0 +1,33 @@
+//menu
+
+
+.head {
+    background-color: black;
+    position: relative;
+    grid-column: 1 / span 5;
+    grid-row: 1 / 1;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+   &__nav {
+        text-align: center;
+        float: left;
+
+
+
+        &--item {
+            position: inline-block;
+            padding:  1.8rem;
+            margin: 1.5rem 1.8rem;
+            text-decoration: none;
+            top: 1rem;
+
+        }
+    }
+}
+
+
+
+

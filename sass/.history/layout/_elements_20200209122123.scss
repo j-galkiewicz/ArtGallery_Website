@@ -1,0 +1,41 @@
+//Grid elements
+
+
+//Discover Box
+.box-2 {
+    grid-column: 3 / span 3;
+    grid-row: 2 / 2;
+    background-color: yellow;
+    overflow: hidden;
+    &--text {
+        font-size: 3.3em;
+        margin: 8px;
+        @include respond(phone) {
+            align-items: center;
+            font-size: 1.8em;
+            padding: 1%;
+            background-size: contain;
+        }
+    }
+}
+
+//About box
+.about {
+    grid-column: 3 / 3;
+    grid-row: 3 / 5;
+    background-color: $color-green;
+    @include respond(phone) {
+        grid-column: 2 / span 3;
+        grid-row: 3 / 5;
+        align-items: center;
+        font-size: 1.6em;
+        padding: 1%;
+        background-size: contain;
+        background-color: $color-green;
+    &__quotes {
+        font-family: $font-main;
+        font-size: 2rem;
+        justify-content: center;
+    }
+}
+}

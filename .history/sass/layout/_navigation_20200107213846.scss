@@ -1,0 +1,16 @@
+//menu
+
+.nav {
+    margin: 2px;
+    padding: 2px;
+    width: 1em;
+    position: inline-block;
+    text-align: center;
+
+
+    &__item {
+
+        display: block;
+        padding: 14px 16px;
+    }
+}

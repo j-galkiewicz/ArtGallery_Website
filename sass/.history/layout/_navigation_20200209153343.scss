@@ -1,0 +1,54 @@
+//menu
+
+
+.head {
+    background-color: white;
+    position: relative;
+    grid-column: 1 / span 5;
+    grid-row: 1 / 1;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    clear: both;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 3%;
+   &__nav {
+        text-align: center;
+        align-self: center;
+
+        &--item {
+            position: inline-block;
+            padding:  1.8rem 1.8rem;
+            margin: 1.5rem 1.5rem;
+            text-decoration: none;
+            cursor: pointer;
+            text-transform: uppercase;
+
+            @include respond(phone) {
+                  display: block;
+                 text-align: center;
+                 overflow: auto;
+                 float: none;
+                 right: auto;
+                 width: 100%;
+                 background: grey;
+                 margin: 0;
+                 padding: 1.5rem 0;
+                }
+
+
+            &:hover {
+                color: black;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding: 1.8rem 1.8rem;
+            }
+        }
+    }
+}
+
+
+
+
