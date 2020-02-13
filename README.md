@@ -1,10 +1,10 @@
 # Art-Gallery Website
 
+--- in progress ---
+
 LINK --> https://j-galkiewicz.github.io/ArtGallery_Website/
 
 An example of Art Gallery website
-
---- in progress ---
 
 
 This repository contains one-page responsive website using grid.
