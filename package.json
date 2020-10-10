@@ -5,9 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch sass/main.scss:css/style.css",
-    "devserver": "live-server --browser=chrome"
+    "sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser=safari",
   },
   "author": "JG",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-galkiewicz/ArtGallery_Website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/j-galkiewicz/ArtGallery_Website/issues"
+  },
+  "homepage": "https://github.com/j-galkiewicz/ArtGallery_Website#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
 }

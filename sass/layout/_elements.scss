@@ -8,7 +8,7 @@
     background-color: yellow;
     overflow: hidden;
     &--text {
-        font-size: 3.3em;
+        font-size: 2.8em;
         margin: 8px;
         @include respond(phone) {
             align-items: center;
