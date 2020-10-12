@@ -9,12 +9,18 @@
     overflow: hidden;
     &--text {
         font-size: 2.8em;
-        margin: 8px;
+        margin: 4%;
         @include respond(phone) {
             align-items: center;
             font-size: 1.8em;
             padding: 1%;
             background-size: contain;
+        }
+        @include respond(ipad-land) {
+
+            padding: 2%;
+            background-size: contain;
+        
         }
     }
 }
@@ -51,6 +57,13 @@
 .one {
     background-image: url('../img/abstract.jpg');
     height: 14%;
+    @include respond(ipad-land) {
+
+        padding: 2%;
+        background-size: contain;
+        height: 10%;
+    
+    }
     }
 .two {
         background-image: url('../img/portr.jpg');
