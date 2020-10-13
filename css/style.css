@@ -108,15 +108,15 @@ html {
   .box-2--text {
     font-size: 2.8em;
     margin: 4%; }
+    @media only screen and (max-width: 56.25em) {
+      .box-2--text {
+        font-size: 2em;
+        padding: 2%; } }
     @media only screen and (max-width: 47.5em) {
       .box-2--text {
         align-items: center;
         font-size: 1.8em;
         padding: 1%;
-        background-size: contain; } }
-    @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
-      .box-2--text {
-        padding: 2%;
         background-size: contain; } }
 
 .box-3 {
@@ -129,6 +129,10 @@ html {
     font-size: 3.3em;
     padding: 5% 2% 9.5%;
     color: blanchedalmond; }
+    @media only screen and (max-width: 56.25em) {
+      .box-3--text {
+        font-size: 2em;
+        padding: 2%; } }
     @media only screen and (max-width: 47.5em) {
       .box-3--text {
         align-items: center;
@@ -145,11 +149,6 @@ html {
 .one {
   background-image: url("../img/abstract.jpg");
   height: 14%; }
-  @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
-    .one {
-      padding: 2%;
-      background-size: contain;
-      height: 10%; } }
 
 .two {
   background-image: url("../img/portr.jpg");
@@ -266,7 +265,7 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(1, minmax(40rem, 70rem)) repeat(2, minmax(25rem, 40rem));
+  grid-template-columns: repeat(1, minmax(40rem, 60rem)) repeat(2, minmax(25rem, 40rem));
   grid-template-rows: 5rem repeat(1, minmax(10rem, 22rem)) repeat(3, 22rem);
   grid: 'header header header' 'content-1 box-1 box-1' 'content-2 content-2 box-1';
   gap: .3rem;
@@ -274,6 +273,11 @@ html {
   margin: auto;
   height: auto;
   overflow: hidden; }
+
+@media only screen and (max-width: 56.25em) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.1rem; } }
 
 @media only screen and (max-width: 47.5em) {
   .wrapper {
@@ -384,6 +388,12 @@ html {
   font-size: 30px;
   display: none;
   cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .toggle {
+      display: block;
+      width: 100%;
+      display: block;
+      text-align: center; } }
   @media only screen and (max-width: 47.5em) {
     .toggle {
       display: block;
@@ -394,6 +404,10 @@ html {
 ul {
   width: 100%;
   padding: 0; }
+  @media only screen and (max-width: 56.25em) {
+    ul {
+      width: 100%;
+      display: none; } }
   @media only screen and (max-width: 47.5em) {
     ul {
       width: 100%;
@@ -403,6 +417,10 @@ ul li {
   list-style: none;
   display: inline-block;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    ul li {
+      display: block;
+      text-aligne: center; } }
   @media only screen and (max-width: 47.5em) {
     ul li {
       display: block;

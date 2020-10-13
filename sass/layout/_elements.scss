@@ -10,17 +10,16 @@
     &--text {
         font-size: 2.8em;
         margin: 4%;
+        @include respond(tab-port) {
+            font-size: 2em;
+            padding: 2%;
+        }
+
         @include respond(phone) {
             align-items: center;
             font-size: 1.8em;
             padding: 1%;
             background-size: contain;
-        }
-        @include respond(ipad-land) {
-
-            padding: 2%;
-            background-size: contain;
-        
         }
     }
 }
@@ -38,6 +37,12 @@
         font-size: 3.3em;
         padding: 5% 2% 9.5% ;
         color: $color-header-light;
+
+        @include respond(tab-port) {
+            font-size: 2em;
+            padding: 2%;
+        }
+
         @include respond(phone) {
             align-items: center;
             font-size: 1.5em;
@@ -57,17 +62,10 @@
 .one {
     background-image: url('../img/abstract.jpg');
     height: 14%;
-    @include respond(ipad-land) {
-
-        padding: 2%;
-        background-size: contain;
-        height: 10%;
-    
-    }
     }
 .two {
-        background-image: url('../img/portr.jpg');
-        height: 20%;
+    background-image: url('../img/portr.jpg');
+    height: 20%;
     }
 .three {
     background-image: url('../img/station.jpg');
@@ -109,7 +107,6 @@
         background-color: $color-green;
     &__heading {
         font-weight: bold;
-    
         font-family: $font-main;
         font-size: 2rem;
         justify-content: center;
