@@ -5,10 +5,10 @@
         @media only screen and (max-width: 47.5em) { @content };    //600px
     }
     @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
+        @media only screen and (max-width: 52.120em) { @content };     //834px --iPad Pro
     }
     @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
+        @media only screen and (max-width: 72,5em) { @content };    //1112px --iPad Pro
     }
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800px

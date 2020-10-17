@@ -108,10 +108,11 @@ html {
   .box-2--text {
     font-size: 2.8em;
     margin: 4%; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 52.125em) {
       .box-2--text {
         font-size: 2em;
-        padding: 2%; } }
+        padding: 1%;
+        background-size: contain; } }
     @media only screen and (max-width: 47.5em) {
       .box-2--text {
         align-items: center;
@@ -129,7 +130,7 @@ html {
     font-size: 3.3em;
     padding: 5% 2% 9.5%;
     color: blanchedalmond; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 52.125em) {
       .box-3--text {
         font-size: 2em;
         padding: 2%; } }
@@ -274,7 +275,7 @@ html {
   height: auto;
   overflow: hidden; }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 52.125em) {
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.1rem; } }
@@ -292,6 +293,9 @@ html {
   grid-column: 1 / span 2;
   grid-row: 2 / 2;
   background-color: bisque; }
+  @media only screen and (min-width: (72, 5em)) {
+    .content-2 {
+      grid-column: 1 / span 1; } }
 
 .empty {
   grid-column: 2 / 2;
@@ -388,7 +392,7 @@ html {
   font-size: 30px;
   display: none;
   cursor: pointer; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 52.125em) {
     .toggle {
       display: block;
       width: 100%;
@@ -404,7 +408,7 @@ html {
 ul {
   width: 100%;
   padding: 0; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 52.125em) {
     ul {
       width: 100%;
       display: none; } }
@@ -417,7 +421,7 @@ ul li {
   list-style: none;
   display: inline-block;
   align-items: center; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 52.125em) {
     ul li {
       display: block;
       text-aligne: center; } }

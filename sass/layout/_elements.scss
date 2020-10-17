@@ -12,7 +12,8 @@
         margin: 4%;
         @include respond(tab-port) {
             font-size: 2em;
-            padding: 2%;
+            padding: 1%;
+            background-size: contain;
         }
 
         @include respond(phone) {
