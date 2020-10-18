@@ -17,7 +17,7 @@
 
 }
 
-@include respond(tab-port) {
+@include respond(tab-land) {
     .wrapper {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 0.1rem;
@@ -40,9 +40,6 @@
     grid-column: 1 / span 2;
     grid-row: 2 / 2;
     background-color: bisque;
-    @include respond(tab-port {
-        grid-column: 1 / span 1;
-    }
 }
 
 
@@ -61,7 +58,6 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-
     background-size: cover;
     cursor: pointer;
     &:hover {
@@ -83,6 +79,7 @@
     grid-column: 2 / 2;
     grid-row: 4 / 4;
     background-image: url('../img/blue4.jpg');
+
     @include respond(phone) {
         display: none;
     }

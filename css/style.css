@@ -1,3 +1,10 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+*/
 * {
   margin: 0;
   padding: 0; }
@@ -21,7 +28,7 @@ html {
   font-size: 1.1em;
   font-weight: bold;
   justify-content: center; }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     .btn-discover {
       align-items: center;
       padding: 14px 9px;
@@ -47,7 +54,7 @@ html {
   justify-content: center;
   color: #006a7a;
   background-color: peachpuff; }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     .btn-submit {
       align-items: center;
       padding: 2px 8px;
@@ -71,7 +78,7 @@ html {
   justify-content: center;
   color: #fcf7f0;
   line-height: 1.5; }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     .contact-form {
       grid-column: 2 / 4;
       background-color: rgba(80, 136, 145, 0.774);
@@ -108,12 +115,10 @@ html {
   .box-2--text {
     font-size: 2.8em;
     margin: 4%; }
-    @media only screen and (max-width: 52.125em) {
+    @media only screen and (max-width: (56, 25em)) {
       .box-2--text {
-        font-size: 2em;
-        padding: 1%;
-        background-size: contain; } }
-    @media only screen and (max-width: 47.5em) {
+        grid-column: 2 / span 3; } }
+    @media only screen and (max-width: 37.5em) {
       .box-2--text {
         align-items: center;
         font-size: 1.8em;
@@ -130,11 +135,11 @@ html {
     font-size: 3.3em;
     padding: 5% 2% 9.5%;
     color: blanchedalmond; }
-    @media only screen and (max-width: 52.125em) {
+    @media only screen and (max-width: (56, 25em)) {
       .box-3--text {
         font-size: 2em;
         padding: 2%; } }
-    @media only screen and (max-width: 47.5em) {
+    @media only screen and (max-width: 37.5em) {
       .box-3--text {
         align-items: center;
         font-size: 1.5em;
@@ -167,7 +172,7 @@ html {
   font-size: 2em;
   margin: 8px;
   color: #fcf7f0; }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     .caption {
       font-size: 1.3em;
       align-items: center; } }
@@ -178,7 +183,10 @@ html {
   background-color: #006a7a;
   font-size: 2.8em;
   padding: 2% 3%; }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: (56, 25em)) {
+    .about {
+      font-size: 1,6em; } }
+  @media only screen and (max-width: 37.5em) {
     .about {
       grid-column: 2 / span 3;
       grid-row: 3 / 5;
@@ -192,7 +200,7 @@ html {
         font-family: "Raleway", sans-serif;
         font-size: 2rem;
         justify-content: center; } }
-    @media only screen and (max-width: 47.5em) and (max-width: 47.5em) {
+    @media only screen and (max-width: 37.5em) and (max-width: 37.5em) {
       .about__heading {
         font-size: 1em;
         align-items: center; } }
@@ -223,7 +231,7 @@ html {
     color: #fcf7f0;
     margin-inline-start: .5em;
     margin-inline-end: .5em; }
-    @media only screen and (max-width: 47.5em) {
+    @media only screen and (max-width: 37.5em) {
       .she--name,
       .he--name {
         font-size: .7em;
@@ -235,7 +243,7 @@ html {
     color: #fcf7f0;
     margin-inline-start: .5em;
     margin-inline-end: .5em; }
-    @media only screen and (max-width: 47.5em) {
+    @media only screen and (max-width: 37.5em) {
       .she--title,
       .he--title {
         font-size: .5em;
@@ -254,7 +262,7 @@ html {
     width: 95%;
     border-radius: 3px;
     padding-right: 1.2rem; }
-    @media only screen and (max-width: 47.5em) {
+    @media only screen and (max-width: 37.5em) {
       .she--description,
       .he--description {
         font-size: .6em;
@@ -275,12 +283,12 @@ html {
   height: auto;
   overflow: hidden; }
 
-@media only screen and (max-width: 52.125em) {
+@media only screen and (max-width: 75em) {
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.1rem; } }
 
-@media only screen and (max-width: 47.5em) {
+@media only screen and (max-width: 37.5em) {
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.08rem; } }
@@ -293,15 +301,12 @@ html {
   grid-column: 1 / span 2;
   grid-row: 2 / 2;
   background-color: bisque; }
-  @media only screen and (min-width: (72, 5em)) {
-    .content-2 {
-      grid-column: 1 / span 1; } }
 
 .empty {
   grid-column: 2 / 2;
   grid-row: 3 / 3;
   background-color: #006a7a; }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     .empty {
       display: none; } }
 
@@ -322,7 +327,7 @@ html {
   grid-column: 2 / 2;
   grid-row: 4 / 4;
   background-image: url("../img/blue4.jpg"); }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     .painting-4 {
       display: none; } }
 
@@ -334,7 +339,7 @@ html {
   grid-column: 3 / span 3;
   grid-row: 5 / 5;
   background-image: url("../img/blue8.jpg"); }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     .painting-8 {
       display: none; } }
 
@@ -361,7 +366,7 @@ html {
       text-decoration: none;
       cursor: pointer;
       text-transform: uppercase; }
-      @media only screen and (max-width: 47.5em) {
+      @media only screen and (max-width: 37.5em) {
         .head__nav--item {
           display: block;
           text-align: center;
@@ -379,7 +384,7 @@ html {
         border-left: 1px solid black;
         border-right: 1px solid black;
         padding: 1rem 1.8rem; }
-        @media only screen and (max-width: 47.5em) {
+        @media only screen and (max-width: 37.5em) {
           .head__nav--item:hover {
             padding: 1rem 0;
             color: #fcf7f0; } }
@@ -392,13 +397,13 @@ html {
   font-size: 30px;
   display: none;
   cursor: pointer; }
-  @media only screen and (max-width: 52.125em) {
+  @media only screen and (max-width: (56, 25em)) {
     .toggle {
       display: block;
       width: 100%;
       display: block;
       text-align: center; } }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     .toggle {
       display: block;
       width: 100%;
@@ -408,11 +413,11 @@ html {
 ul {
   width: 100%;
   padding: 0; }
-  @media only screen and (max-width: 52.125em) {
+  @media only screen and (max-width: (56, 25em)) {
     ul {
       width: 100%;
       display: none; } }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     ul {
       width: 100%;
       display: none; } }
@@ -421,11 +426,11 @@ ul li {
   list-style: none;
   display: inline-block;
   align-items: center; }
-  @media only screen and (max-width: 52.125em) {
+  @media only screen and (max-width: (56, 25em)) {
     ul li {
       display: block;
       text-aligne: center; } }
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 37.5em) {
     ul li {
       display: block;
       text-aligne: center; } }
