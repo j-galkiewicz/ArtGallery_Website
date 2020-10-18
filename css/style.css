@@ -185,7 +185,7 @@ html {
   padding: 2% 3%; }
   @media only screen and (max-width: (56, 25em)) {
     .about {
-      font-size: 1,6em; } }
+      grid-row: 3 / span 5; } }
   @media only screen and (max-width: 37.5em) {
     .about {
       grid-column: 2 / span 3;
@@ -339,6 +339,9 @@ html {
   grid-column: 3 / span 3;
   grid-row: 5 / 5;
   background-image: url("../img/blue8.jpg"); }
+  @media only screen and (max-width: (56, 25em)) {
+    .painting-8 {
+      display: none; } }
   @media only screen and (max-width: 37.5em) {
     .painting-8 {
       display: none; } }

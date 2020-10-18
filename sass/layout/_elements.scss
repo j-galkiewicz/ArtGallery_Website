@@ -12,7 +12,6 @@
         margin: 4%;
         @include respond(tab-port) {
             grid-column: 2 / span 3;
-
         }
 
 
@@ -100,9 +99,9 @@
     padding: 2% 3%;
 
     @include respond(tab-port) {
-        font-size: 1,6em;
-}
-  
+
+        grid-row: 3 / span 5;
+    }
     @include respond(phone) {
         grid-column: 2 / span 3;
         grid-row: 3 / 5;
@@ -119,14 +118,12 @@
         @include respond(phone) {
             font-size: 1em;
             align-items: center;
-            @include respond(tab-port) {
-                font-size: 1,2em;
-            }
+        }
         }
     }
     }
-}
-}
+
+
 
 .sub-text{
     font-size: 1.5rem;

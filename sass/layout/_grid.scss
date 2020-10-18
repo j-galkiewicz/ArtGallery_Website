@@ -98,8 +98,12 @@
     grid-column: 3 / span 3;
     grid-row: 5 / 5;
     background-image: url('../img/blue8.jpg');
+    @include respond(tab-port) {
+        display: none;
+    }
     @include respond(phone) {
         display: none;
     }
+
 }
 
