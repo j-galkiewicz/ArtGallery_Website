@@ -12,10 +12,9 @@
         margin: 4%;
         @include respond(tab-port) {
             grid-column: 2 / span 3;
+            font-size: 2.2em;
+
         }
-
-
-
         @include respond(phone) {
             align-items: center;
             font-size: 1.8em;
@@ -65,7 +64,7 @@
     height: 14%;
     }
 .two {
-    background-image: url('../img/portr.jpg');
+    background-image: url('../img/portrait.jpg');
     height: 20%;
     }
 .three {
@@ -97,11 +96,11 @@
     background-color: $color-green;
     font-size: 2.8em;
     padding: 2% 3%;
-
     @include respond(tab-port) {
-
+        grid-column: 3 / span 3;
         grid-row: 3 / span 5;
-    }
+    
+    } 
     @include respond(phone) {
         grid-column: 2 / span 3;
         grid-row: 3 / 5;
@@ -119,7 +118,9 @@
             font-size: 1em;
             align-items: center;
         }
+
         }
+ 
     }
     }
 
@@ -194,7 +195,10 @@
         width: 95%;
         border-radius: 3px;
         padding-right: 1.2rem;
-
+        @include respond(tab-land) {
+            font-size: .4em;
+            align-items: center;
+        }
         @include respond(phone) {
             font-size: .6em;
             align-items: center;
