@@ -112,7 +112,7 @@
         padding: 3px;
         background-size: contain;
         background-color: $color-green;
-
+    }
     &__heading {
         font-weight: bold;
         font-family: $font-main;
@@ -125,12 +125,18 @@
         }
         }
     }
-}
 
 
 
-.sub-text{
+
+.sub-text {
     font-size: 1.5rem;
+    padding: 1.5%;
+    @include respond(phone) {
+        font-size: .8em;
+        padding: 1%;
+        align-items: center;
+    }
 }
 
 //Team's photos
@@ -139,25 +145,29 @@
     padding: 20%;
     display: flex;
     flex-direction: column;
-    
+
     &__she,
     &__he {
-        border-radius: 48%;
+        border-radius: 30%;
         margin: 2% 3%;
-   }   
+        @include respond(phone) {
+            border-radius: 0%;
+           }    
+
+
    &__she {
     float: left;
 
-   &__he{
+   &__he {
        float: right;
 
        @include respond(phone) {
-        margin: auto;
-
+        border-radius: 0%;
+       }    
     }
    }
 }
-
+    }    
 .she,
 .he {
     color: $color-titles-light;
@@ -183,7 +193,7 @@
         margin-inline-end: .5em;
 
         @include respond(phone) {
-            font-size: .5em;
+            font-size: 4em;
             align-items: center;
             font-weight: normal;
     }
@@ -202,16 +212,16 @@
         padding-right: 1.2rem;
 
         @include respond(tab-land) {
-            font-size: .4em;
-            align-items: center;
-        }
-        @include respond(phone) {
             font-size: .6em;
+            align-items: center;
+        
+        @include respond(phone) {
+            font-size: .5em;
             align-items: center;
         }
     }
 }
-
+}
 .he {
     &--name,
     &--title,
