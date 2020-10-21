@@ -102,9 +102,7 @@
         display: none;
     }
     @include respond(phone) {
-        display: none;
+            display: none;
+        }
     }
- 
-}
-
 

@@ -115,7 +115,7 @@ html {
   .box-2--text {
     font-size: 2.8em;
     margin: 4%; }
-    @media only screen and (max-width: (56, 25em)) {
+    @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
       .box-2--text {
         grid-column: 2 / span 3;
         font-size: 2.2em; } }
@@ -136,7 +136,7 @@ html {
     font-size: 3.3em;
     padding: 5% 2% 9.5%;
     color: blanchedalmond; }
-    @media only screen and (max-width: (56, 25em)) {
+    @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
       .box-3--text {
         font-size: 2em;
         padding: 2%; } }
@@ -184,7 +184,7 @@ html {
   background-color: #006a7a;
   font-size: 2.8em;
   padding: 2% 3%; }
-  @media only screen and (max-width: (56, 25em)) {
+  @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
     .about {
       grid-column: 3 / span 3;
       grid-row: 3 / span 5; } }
@@ -346,7 +346,7 @@ html {
   grid-column: 3 / span 3;
   grid-row: 5 / 5;
   background-image: url("../img/blue8.jpg"); }
-  @media only screen and (max-width: (56, 25em)) {
+  @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
     .painting-8 {
       display: none; } }
   @media only screen and (max-width: 37.5em) {
@@ -407,7 +407,7 @@ html {
   font-size: 30px;
   display: none;
   cursor: pointer; }
-  @media only screen and (max-width: (56, 25em)) {
+  @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
     .toggle {
       display: block;
       width: 100%;
@@ -423,7 +423,7 @@ html {
 ul {
   width: 100%;
   padding: 0; }
-  @media only screen and (max-width: (56, 25em)) {
+  @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
     ul {
       width: 100%;
       display: none; } }
@@ -436,7 +436,7 @@ ul li {
   list-style: none;
   display: inline-block;
   align-items: center; }
-  @media only screen and (max-width: (56, 25em)) {
+  @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
     ul li {
       display: block;
       text-aligne: center; } }

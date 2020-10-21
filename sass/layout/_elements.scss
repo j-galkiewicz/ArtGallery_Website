@@ -10,6 +10,7 @@
     &--text {
         font-size: 2.8em;
         margin: 4%;
+        
         @include respond(tab-port) {
             grid-column: 2 / span 3;
             font-size: 2.2em;
@@ -81,6 +82,7 @@
     font-size: 2em;
     margin: 8px;
     color: $color-titles-light;
+
     @include respond(phone) {
         font-size: 1.3em;
         align-items: center;
@@ -164,6 +166,7 @@
         color: $color-titles-light;
         margin-inline-start: .5em;
         margin-inline-end: .5em;
+
         @include respond(phone) {
             font-size: .7em;
             align-items: center;
@@ -176,6 +179,7 @@
         color: $color-titles-light;
         margin-inline-start: .5em;
         margin-inline-end: .5em;
+
         @include respond(phone) {
             font-size: .5em;
             align-items: center;
@@ -195,6 +199,7 @@
         width: 95%;
         border-radius: 3px;
         padding-right: 1.2rem;
+
         @include respond(tab-land) {
             font-size: .4em;
             align-items: center;
