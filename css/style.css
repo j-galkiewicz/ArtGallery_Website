@@ -299,9 +299,7 @@ html {
   display: grid;
   grid-template-columns: repeat(1, minmax(40rem, 60rem)) repeat(2, minmax(25rem, 40rem));
   grid-template-rows: 5rem repeat(1, minmax(10rem, 22rem)) repeat(3, 22rem);
-  grid: 'header header header'
- 'content-1 box-1 box-1'
- 'content-2 content-2 box-1';
+  grid: 'header header header' 'content-1 box-1 box-1' 'content-2 content-2 box-1';
   gap: .3rem;
   padding: 0;
   margin: auto;
