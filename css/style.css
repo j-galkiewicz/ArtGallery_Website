@@ -83,8 +83,8 @@ html {
       grid-column: 2 / 4;
       background-color: rgba(80, 136, 145, 0.774);
       align-items: center;
-      font-size: .7em;
-      padding: 1%;
+      font-size: .9em;
+      padding: 2%;
       background-size: contain; } }
 
 #first-name,
@@ -99,11 +99,6 @@ html {
   margin: 0 auto;
   position: relative;
   font-size: 1.1em; }
-  @media only screen and (max-width: 37.5em) {
-    #first-name,
-    #last-name,
-    #email {
-      height: 15px; } }
 
 #message {
   border: none;
@@ -191,11 +186,17 @@ html {
   @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
     .about {
       grid-column: 3 / span 3;
-      grid-row: 3 / span 5; } }
+      grid-row: 3 / span 5;
+      font-size: 1.3em; } }
+  @media only screen and (max-width: 75em) {
+    .about {
+      grid-column: 3 / span 3;
+      grid-row: 3 / span 5;
+      font-size: 1.3em; } }
   @media only screen and (max-width: 37.5em) {
     .about {
       grid-column: 2 / span 3;
-      grid-row: 3 / 5;
+      grid-row: 3 / span 5;
       align-items: center;
       font-size: 1.1em;
       padding: 3px;
@@ -206,9 +207,17 @@ html {
     font-family: "Raleway", sans-serif;
     font-size: 2rem;
     justify-content: center; }
+    @media only screen and (max-width: 75em) {
+      .about__heading {
+        font-size: 1.2em;
+        align-items: center; } }
+    @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
+      .about__heading {
+        font-size: 1.2em;
+        align-items: center; } }
     @media only screen and (max-width: 37.5em) {
       .about__heading {
-        font-size: .6em;
+        font-size: .8em;
         align-items: center; } }
 
 .sub-text {
@@ -226,18 +235,15 @@ html {
   display: flex;
   flex-direction: column; }
   .image__she, .image__he {
-    border-radius: 30%;
+    border-radius: 48%;
     margin: 2% 3%; }
     @media only screen and (max-width: 37.5em) {
       .image__she, .image__he {
         border-radius: 0%; } }
     .image__she__she, .image__he__she {
       float: left; }
-      .image__she__she__he, .image__he__she__he {
-        float: right; }
-        @media only screen and (max-width: 37.5em) {
-          .image__she__she__he, .image__he__she__he {
-            border-radius: 0%; } }
+    .image__she__he, .image__he__he {
+      float: right; }
 
 .she,
 .he {
@@ -264,7 +270,7 @@ html {
     @media only screen and (max-width: 37.5em) {
       .she--title,
       .he--title {
-        font-size: 4em;
+        font-size: .6em;
         align-items: center;
         font-weight: normal; } }
   .she--description,
@@ -276,24 +282,24 @@ html {
     margin-block-end: 3.5em;
     margin-inline-start: .7em;
     margin-inline-end: .5em;
-    transform: skewX(-8deg);
+    transform: skewX(-9deg);
     width: 95%;
     border-radius: 3px;
     padding-right: 1.2rem; }
     @media only screen and (max-width: 75em) {
       .she--description,
       .he--description {
-        font-size: .6em;
+        font-size: .9em;
         align-items: center; } }
   @media only screen and (max-width: 75em) and (max-width: 37.5em) {
     .she--description,
     .he--description {
-      font-size: .5em;
+      font-size: .7em;
       align-items: center; } }
 
 .he--name, .he--title, .he--description {
   padding-right: 1.2rem;
-  transform: skewX(8deg); }
+  transform: skewX(10deg); }
 
 .wrapper {
   display: grid;
@@ -363,6 +369,9 @@ html {
   grid-row: 5 / 5;
   background-image: url("../img/blue8.jpg"); }
   @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
+    .painting-8 {
+      display: none; } }
+  @media only screen and (max-width: 75em) {
     .painting-8 {
       display: none; } }
   @media only screen and (max-width: 37.5em) {

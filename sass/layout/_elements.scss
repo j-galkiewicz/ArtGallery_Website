@@ -102,11 +102,16 @@
     @include respond(tab-port) {
         grid-column: 3 / span 3;
         grid-row: 3 / span 5;
-   
+        font-size: 1.3em;
+    } 
+    @include respond(tab-land) {
+        grid-column: 3 / span 3;
+        grid-row: 3 / span 5;
+        font-size: 1.3em;
     } 
     @include respond(phone) {
         grid-column: 2 / span 3;
-        grid-row: 3 / 5;
+        grid-row: 3 / span 5;
         align-items: center;
         font-size: 1.1em;
         padding: 3px;
@@ -119,8 +124,16 @@
         font-size: 2rem;
         justify-content: center;
 
+        @include respond(tab-land) {
+            font-size: 1.2em;
+            align-items: center;
+        }
+        @include respond(tab-port) {
+            font-size: 1.2em;
+            align-items: center;
+        }
         @include respond(phone) {
-            font-size: .6em;
+            font-size: .8em;
             align-items: center;
         }
         }
@@ -148,26 +161,22 @@
 
     &__she,
     &__he {
-        border-radius: 30%;
+        border-radius: 48%;
         margin: 2% 3%;
         @include respond(phone) {
             border-radius: 0%;
-           }    
-
-
+        }
    &__she {
     float: left;
-
+   }
    &__he {
        float: right;
 
-       @include respond(phone) {
-        border-radius: 0%;
-       }    
+         
     }
    }
 }
-    }    
+
 .she,
 .he {
     color: $color-titles-light;
@@ -193,7 +202,7 @@
         margin-inline-end: .5em;
 
         @include respond(phone) {
-            font-size: 4em;
+            font-size: .6em;
             align-items: center;
             font-weight: normal;
     }
@@ -206,17 +215,18 @@
         margin-block-end: 3.5em;
         margin-inline-start: .7em;
         margin-inline-end: .5em;
-        transform: skewX(-8deg);
+        transform: skewX(-9deg);
         width: 95%;
         border-radius: 3px;
         padding-right: 1.2rem;
 
         @include respond(tab-land) {
-            font-size: .6em;
+            font-size: .9em;
             align-items: center;
+            
         
         @include respond(phone) {
-            font-size: .5em;
+            font-size: .7em;
             align-items: center;
         }
     }
@@ -227,7 +237,7 @@
     &--title,
     &--description {
         padding-right: 1.2rem;
-        transform: skewX(8deg);
+        transform: skewX(10deg);
     }
 }
 
