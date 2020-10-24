@@ -113,8 +113,8 @@
         grid-column: 2 / span 3;
         grid-row: 3 / span 5;
         align-items: center;
-        font-size: 1.1em;
-        padding: 3px;
+        font-size: 1.2em;
+        padding: 3%;
         background-size: contain;
         background-color: $color-green;
     }
@@ -125,15 +125,15 @@
         justify-content: center;
 
         @include respond(tab-land) {
-            font-size: 1.2em;
+            font-size: 1.3em;
             align-items: center;
         }
         @include respond(tab-port) {
-            font-size: 1.2em;
+            font-size: 1.3em;
             align-items: center;
         }
         @include respond(phone) {
-            font-size: .8em;
+            font-size: 1.2em;
             align-items: center;
         }
         }
@@ -146,7 +146,7 @@
     font-size: 1.5rem;
     padding: 1.5%;
     @include respond(phone) {
-        font-size: .8em;
+        font-size: .9em;
         padding: 1%;
         align-items: center;
     }
@@ -159,6 +159,13 @@
     display: flex;
     flex-direction: column;
 
+        &__she {
+        float: left;
+        }
+        &__he {
+        float: right;
+    }
+
     &__she,
     &__he {
         border-radius: 48%;
@@ -166,16 +173,10 @@
         @include respond(phone) {
             border-radius: 0%;
         }
-   &__she {
-    float: left;
-   }
-   &__he {
-       float: right;
-
-         
-    }
-   }
+    }    
 }
+   
+
 
 .she,
 .he {
@@ -189,7 +190,7 @@
         margin-inline-end: .5em;
 
         @include respond(phone) {
-            font-size: .7em;
+            font-size: .8em;
             align-items: center;
     }
 
@@ -221,12 +222,11 @@
         padding-right: 1.2rem;
 
         @include respond(tab-land) {
-            font-size: .9em;
+            font-size: 1em;
             align-items: center;
             
-        
         @include respond(phone) {
-            font-size: .7em;
+            font-size: .8em;
             align-items: center;
         }
     }
@@ -238,7 +238,20 @@
     &--description {
         padding-right: 1.2rem;
         transform: skewX(10deg);
+        @include respond(phone) {
+            transform: none;
+            
+        }
     }
 }
 
-
+.she{
+    &--name,
+    &--title,
+    &--description {
+        @include respond(phone) {
+            transform: none;
+            
+        }
+    }
+}

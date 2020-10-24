@@ -198,8 +198,8 @@ html {
       grid-column: 2 / span 3;
       grid-row: 3 / span 5;
       align-items: center;
-      font-size: 1.1em;
-      padding: 3px;
+      font-size: 1.2em;
+      padding: 3%;
       background-size: contain;
       background-color: #006a7a; } }
   .about__heading {
@@ -209,15 +209,15 @@ html {
     justify-content: center; }
     @media only screen and (max-width: 75em) {
       .about__heading {
-        font-size: 1.2em;
+        font-size: 1.3em;
         align-items: center; } }
     @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
       .about__heading {
-        font-size: 1.2em;
+        font-size: 1.3em;
         align-items: center; } }
     @media only screen and (max-width: 37.5em) {
       .about__heading {
-        font-size: .8em;
+        font-size: 1.2em;
         align-items: center; } }
 
 .sub-text {
@@ -225,7 +225,7 @@ html {
   padding: 1.5%; }
   @media only screen and (max-width: 37.5em) {
     .sub-text {
-      font-size: .8em;
+      font-size: .9em;
       padding: 1%;
       align-items: center; } }
 
@@ -234,16 +234,16 @@ html {
   padding: 20%;
   display: flex;
   flex-direction: column; }
+  .image__she {
+    float: left; }
+  .image__he {
+    float: right; }
   .image__she, .image__he {
     border-radius: 48%;
     margin: 2% 3%; }
     @media only screen and (max-width: 37.5em) {
       .image__she, .image__he {
         border-radius: 0%; } }
-    .image__she__she, .image__he__she {
-      float: left; }
-    .image__she__he, .image__he__he {
-      float: right; }
 
 .she,
 .he {
@@ -258,7 +258,7 @@ html {
     @media only screen and (max-width: 37.5em) {
       .she--name,
       .he--name {
-        font-size: .7em;
+        font-size: .8em;
         align-items: center; } }
   .she--title,
   .he--title {
@@ -289,17 +289,24 @@ html {
     @media only screen and (max-width: 75em) {
       .she--description,
       .he--description {
-        font-size: .9em;
+        font-size: 1em;
         align-items: center; } }
   @media only screen and (max-width: 75em) and (max-width: 37.5em) {
     .she--description,
     .he--description {
-      font-size: .7em;
+      font-size: .8em;
       align-items: center; } }
 
 .he--name, .he--title, .he--description {
   padding-right: 1.2rem;
   transform: skewX(10deg); }
+  @media only screen and (max-width: 37.5em) {
+    .he--name, .he--title, .he--description {
+      transform: none; } }
+
+@media only screen and (max-width: 37.5em) {
+  .she--name, .she--title, .she--description {
+    transform: none; } }
 
 .wrapper {
   display: grid;
