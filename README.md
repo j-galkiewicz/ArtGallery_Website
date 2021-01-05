@@ -14,5 +14,6 @@ This repository contains one-page responsive website using grid.
 
 The design has been created by me.
 
+![Gallerypic](https://user-images.githubusercontent.com/46644880/103642602-ac81ce00-4f53-11eb-87e2-686d758e0dbf.jpg)
 
 Enjoy!
