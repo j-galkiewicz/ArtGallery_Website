@@ -3,14 +3,16 @@
 
 LINK --> https://j-galkiewicz.github.io/ArtGallery_Website/
 
+## What?
 An example of Art Gallery website
-
 
 This repository contains one-page responsive website using grid.
 
-What did I use to code it?
+## What did I use to code it?
 
 -- HTML -- SASS -grid -mixins 
 
 The design has been created by me.
 
+
+Enjoy!
