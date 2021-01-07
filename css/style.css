@@ -414,15 +414,21 @@ html {
     width: 100%; }
     .head__nav--item {
       position: inline-block;
+      min-height: 15px;
       padding: 1.8rem 1.8rem;
-      margin: 1.5rem 1.5rem;
+      margin: 1.5rem 2.2rem;
       text-decoration: none;
       cursor: pointer;
       text-transform: uppercase; }
+      @media only screen and (max-width: 75em) {
+        .head__nav--item {
+          font-size: .8rem;
+          letter-spacing: .2rem;
+          padding: 1rem;
+          margin: 1.5rem; } }
       @media only screen and (max-width: 37.5em) {
         .head__nav--item {
           display: block;
-          text-align: center;
           overflow: auto;
           float: none;
           right: auto;
@@ -431,12 +437,11 @@ html {
           margin: 0;
           padding: 2rem 0 0;
           color: darkblue;
-          font-size: 1.5rem; } }
+          font-size: 1.5rem;
+          text-align: center; } }
       .head__nav--item:hover {
         color: black;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        padding: 1rem 1.8rem; }
+        padding: auto; }
         @media only screen and (max-width: 37.5em) {
           .head__nav--item:hover {
             padding: 1rem 0;
