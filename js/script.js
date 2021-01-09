@@ -1,8 +1,9 @@
 
 //hamburger menu
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-nav-toggle");
 
-$(document).ready(function(){
-  $('.menu').click(function(){
-   $('ul').toggleClass('active');
-  })
-})
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
+

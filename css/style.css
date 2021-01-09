@@ -322,7 +322,7 @@ html {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(1, minmax(40rem, 60rem)) repeat(2, minmax(25rem, 40rem));
-  grid-template-rows: 5rem repeat(1, minmax(10rem, 22rem)) repeat(3, 22rem);
+  grid-template-rows: 5rem repeat(1, minmax(10rem, 22rem)) repeat(2, 22rem) 1fr;
   grid: 'header header header' 'content-1 box-1 box-1' 'content-2 content-2 box-1';
   gap: .3rem;
   padding: 0;
@@ -419,37 +419,59 @@ html {
       margin: 1.5rem 2.2rem;
       text-decoration: none;
       cursor: pointer;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: bold; }
       @media only screen and (max-width: 75em) {
         .head__nav--item {
           font-size: .8rem;
           letter-spacing: .2rem;
           padding: 1rem;
-          margin: 1.5rem; } }
-      @media only screen and (max-width: 37.5em) {
+          margin: 1.5rem;
+          overflow-x: hidden;
+          transition: 0.5s; } }
+      @media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
         .head__nav--item {
+          font-size: 2.3rem;
+          letter-spacing: .2rem;
+          padding: 1rem;
+          margin: 0;
+          color: white;
+          font-weight: bold;
+          text-align: center;
+          background: #006a7a;
+          opacity: 0.9;
           display: block;
           overflow: auto;
           float: none;
           right: auto;
           width: 100%;
+          text-align: center;
+          overflow-x: hidden;
+          transition: 0.5s; } }
+      @media only screen and (max-width: 37.5em) {
+        .head__nav--item {
+          display: block;
+          height: 12vh;
           background: #006a7a;
+          opacity: 0.9;
           margin: 0;
           padding: 2rem 0 0;
           color: darkblue;
-          font-size: 1.5rem;
-          text-align: center; } }
+          font-size: 2rem;
+          font-weight: bold;
+          text-align: center;
+          color: white;
+          overflow-x: hidden;
+          transition: 0.5s; } }
       .head__nav--item:hover {
         color: black;
         padding: auto; }
         @media only screen and (max-width: 37.5em) {
           .head__nav--item:hover {
-            padding: 1rem 0;
-            color: #fcf7f0; } }
+            color: darkblue; } }
 
 .toggle {
-  width: 100%;
-  padding: 10px 20px;
+  padding: 5px;
   text-align: right;
   box-sizing: border-box;
   font-size: 30px;
@@ -459,13 +481,11 @@ html {
     .toggle {
       display: block;
       width: 100%;
-      display: block;
       text-align: center; } }
   @media only screen and (max-width: 37.5em) {
     .toggle {
       display: block;
-      width: 100%;
-      display: block;
+      width: auto;
       text-align: center; } }
 
 ul {
